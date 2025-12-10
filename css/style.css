@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --cor-primaria: #e21;
+    --cor-primaria-escura: #900;
+    --fundo-1: #f7f7f7;
+    --fundo-2: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+.bike {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    background-color: var(--fundo-1);
+    display: grid;
+    gap: 60px;
+    justify-items: center;
+    color: #111;
+}
+
+.titulo {
+    display: grid;
+    justify-items: center;
+    margin-top: 3rem;
+    gap: 60px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    margin: 10px;
+    color: #111;
+    background-color: var(--fundo-2);
+    border-radius: 4px;
+}
+
+.menu a:hover {
+    border: 2px solid var(--cor-primaria);
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1000px;
+}
+
+.introducao h1 {
+    font-size: 2rem;
+}
+
+.introducao {
+    background-color: var(--fundo-2);
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    display: grid;
+    gap: 20px;
+    align-content: center;
+    justify-items: end;
+}
+
+.introducao-cover img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.introducao::before {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: var(--cor-primaria);
+    display: inline-block;
+    top: 30px;
+    right: -30px;
+    position: absolute;
+}
+
+.botao {
+    background-color: var(--cor-primaria);
+    text-decoration: none;
+    color: var(--fundo-2);
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.botao:hover {
+    background-color: var(--cor-primaria-escura);
+}
+
+.subtitulo {
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    color: rgba( 0, 0, 0, .2);
+    text-align: right;
+    padding: 40px;
+    align-self: center;
+}
