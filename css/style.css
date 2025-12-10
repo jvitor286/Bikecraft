@@ -120,3 +120,33 @@ p {
     padding: 40px;
     align-self: center;
 }
+
+.vantagens {
+    background-color: var(--fundo-2);
+    padding: 40px;
+}
+
+.itens-vantagens {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px 15px;
+    padding: 20px;
+}
+
+.itens-vantagens:nth-child(odd) {
+    background: var(--fundo-1);
+}
+
+.itens-vantagens:hover{
+    border-left: 2px solid var(--cor-primaria);
+}
+
+.itens-vantagens p {
+    grid-column: 2;
+}
+
+.rodape {
+    background-color: var(--fundo-2);
+    text-align: center;
+    padding: 40px;
+}
